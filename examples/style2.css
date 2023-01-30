@@ -7,7 +7,8 @@ body{
 h1 {
     background-color: aqua;
     padding: 30px;
-    margin: auto;
+    border: 30px solid lime;
+    margin: 0 auto;
     border-radius:50px;
     color: #0000AA;
     width: 80%;
@@ -21,4 +22,8 @@ p {
     color: white;
     width: 708px;
     text-align: center;
+}
+.grid-container {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
 }
