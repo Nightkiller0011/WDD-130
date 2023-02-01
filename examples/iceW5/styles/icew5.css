@@ -1,0 +1,25 @@
+body {
+    background-color: #737373;
+}
+
+#top {
+    width: 100%;
+    margin: 0
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 12%;
+    margin: 0 10%;
+}
+
+.display {
+    max-width: 100%;
+    border: solid #444444;
+    border-width: 22px;
+    border-radius: 20000px;
+    margin: 20% auto;
+}
+
+
