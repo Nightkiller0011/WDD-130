@@ -82,12 +82,53 @@ main section img {
 }
 
 /* Main */
-.home-grid {
+.home-grid, .river-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+.salmon-river-card {
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+.salmon-text {
+    font-size: .75em;
+    grid-row: 2/3;
+    grid-column: 5/10;
+}
+.desolation-text {
+    font-size: .9em;
+    grid-row: 5/6;
+    grid-column: 5/10;
+}
+.grand-text {
+    font-size: .9em;
+    grid-row: 8/9;
+    grid-column: 5/10;
+}
+.desolation-canyon-card {
+    grid-row: 5/6;
+    grid-column: 2/4;
+}
+.grand-canyon-card {
+    grid-row: 8/9;
+    grid-column: 2/4;
+}
 .card-img, .mountains {
     width: 100%;
+}
+.faq {
+    grid-column: 2/6;
+    grid-row: 11/13;
+    box-shadow: 5px 5px 10px #6f7364;
+    background-color: honeydew;
+    padding: 35px;
+}
+.blog {
+        background-color: honeydew;
+        padding: 35px;
+        grid-column: 7/10;
+        grid-row: 11/13;
+        box-shadow: 5px 5px 10px #6f7364;
 }
 .mountains {
     grid-column: 2/7;
