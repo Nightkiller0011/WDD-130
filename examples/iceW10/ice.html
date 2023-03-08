@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ice.css">
+    <title>IceChallenge10</title>
+</head>
+<body>
+    <section class="grid-container">
+        <div class="left">
+            <form action="/my-handling-form-page" method="post">
+                <h1 class="top">Sign Up</h1>
+                <p class="text" id="light">Please sign up with your real name.<br>Once you entered it, you will not able to change it later. <br> <strong>A password will be send to your email, so please make<br>sure it correct.</strong></p>
+                <br><input placeholder="Enter your name" type="text"><br>
+                <input placeholder="Enter your email" type="text"><br>
+                <button type="submit" id="signup">Sign Up</button>
+        </div>
+        <div class="right">
+            <img src="london.jpg" alt="art">
+        </div>
+    </section>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+
+</body>
+</html>
